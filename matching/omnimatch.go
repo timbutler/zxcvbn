@@ -1,10 +1,11 @@
 package matching
 
 import (
-	"github.com/trustelem/zxcvbn/adjacency"
-	"github.com/trustelem/zxcvbn/frequency"
-	"github.com/trustelem/zxcvbn/match"
 	"regexp"
+
+	"github.com/timbutler/zxcvbn/adjacency"
+	"github.com/timbutler/zxcvbn/frequency"
+	"github.com/timbutler/zxcvbn/match"
 )
 
 func Omnimatch(password string, userInputs []string) (matches []*match.Match) {
