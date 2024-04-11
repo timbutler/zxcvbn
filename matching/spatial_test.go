@@ -4,8 +4,8 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/assert"
-	"github.com/trustelem/zxcvbn/adjacency"
-	"github.com/trustelem/zxcvbn/match"
+	"github.com/timbutler/zxcvbn/adjacency"
+	"github.com/timbutler/zxcvbn/match"
 )
 
 func Test_spatialMatch(t *testing.T) {

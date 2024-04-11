@@ -5,11 +5,11 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/assert"
-	"github.com/trustelem/zxcvbn/adjacency"
-	"github.com/trustelem/zxcvbn/internal/mathutils"
-	"github.com/trustelem/zxcvbn/match"
-	"github.com/trustelem/zxcvbn/matching"
-	"github.com/trustelem/zxcvbn/scoring"
+	"github.com/timbutler/zxcvbn/adjacency"
+	"github.com/timbutler/zxcvbn/internal/mathutils"
+	"github.com/timbutler/zxcvbn/match"
+	"github.com/timbutler/zxcvbn/matching"
+	"github.com/timbutler/zxcvbn/scoring"
 )
 
 func TestRepeatGuesses(t *testing.T) {

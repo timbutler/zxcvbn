@@ -5,7 +5,7 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/assert"
-	"github.com/trustelem/zxcvbn/match"
+	"github.com/timbutler/zxcvbn/match"
 )
 
 // removeRepeatBaseData removes extra data not needed for unit tests

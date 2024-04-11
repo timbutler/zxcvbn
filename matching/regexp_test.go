@@ -1,9 +1,10 @@
 package matching
 
 import (
-	"github.com/stretchr/testify/assert"
-	"github.com/trustelem/zxcvbn/match"
 	"testing"
+
+	"github.com/stretchr/testify/assert"
+	"github.com/timbutler/zxcvbn/match"
 )
 
 func TestRegexpMatching(t *testing.T) {

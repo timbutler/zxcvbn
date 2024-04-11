@@ -1,7 +1,7 @@
 package matching
 
 import (
-	"github.com/trustelem/zxcvbn/match"
+	"github.com/timbutler/zxcvbn/match"
 )
 
 type reverseDictionnaryMatch struct {

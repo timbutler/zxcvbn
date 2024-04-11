@@ -86,9 +86,9 @@ for i in "zxcvbn" \
 done
 
 echo "Initial workdir/corpus added"
-echo "Generating go-fuzz-build: (go-fuzz-build github.com/trustelem/zxcvbn/fuzz)"
+echo "Generating go-fuzz-build: (go-fuzz-build github.com/timbutler/zxcvbn/fuzz)"
 export GO111MODULE=off
-go-fuzz-build github.com/trustelem/zxcvbn/fuzz
+go-fuzz-build github.com/timbutler/zxcvbn/fuzz
 echo "Start fuzzing with:"
 echo "go-fuzz -bin fuzz-fuzz.zip -workdir workdir"
 

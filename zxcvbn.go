@@ -4,10 +4,10 @@ import (
 	"time"
 	"unicode/utf8"
 
-	"github.com/trustelem/zxcvbn/match"
+	"github.com/timbutler/zxcvbn/match"
 
 	"github.com/timbutler/zxcvbn/matching"
-	"github.com/trustelem/zxcvbn/scoring"
+	"github.com/timbutler/zxcvbn/scoring"
 )
 
 type Result struct {

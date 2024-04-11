@@ -4,8 +4,8 @@ import (
 	"math"
 	"sort"
 
-	"github.com/trustelem/zxcvbn/internal/mathutils"
-	"github.com/trustelem/zxcvbn/match"
+	"github.com/timbutler/zxcvbn/internal/mathutils"
+	"github.com/timbutler/zxcvbn/match"
 )
 
 type Result struct {
@@ -27,7 +27,7 @@ type Result struct {
 // the optimal "minimum guesses" sequence is here defined to be the sequence that
 // minimizes the following function:
 //
-//    g = l! * Product(m.guesses for m in sequence) + D^(l - 1)
+//	g = l! * Product(m.guesses for m in sequence) + D^(l - 1)
 //
 // where l is the length of the sequence.
 //
@@ -37,14 +37,13 @@ type Result struct {
 // attacker will try lower-length sequences first before trying length-l sequences.
 //
 // for example, consider a sequence that is date-repeat-dictionary.
-//  - an attacker would need to try other date-repeat-dictionary combinations,
-//    hence the product term.
-//  - an attacker would need to try repeat-date-dictionary, dictionary-repeat-date,
-//    ..., hence the factorial term.
-//  - an attacker would also likely try length-1 (dictionary) and length-2 (dictionary-date)
-//    sequences before length-3. assuming at minimum D guesses per pattern type,
-//    D^(l-1) approximates Sum(D^i for i in [1..l-1]
-//
+//   - an attacker would need to try other date-repeat-dictionary combinations,
+//     hence the product term.
+//   - an attacker would need to try repeat-date-dictionary, dictionary-repeat-date,
+//     ..., hence the factorial term.
+//   - an attacker would also likely try length-1 (dictionary) and length-2 (dictionary-date)
+//     sequences before length-3. assuming at minimum D guesses per pattern type,
+//     D^(l-1) approximates Sum(D^i for i in [1..l-1]
 func MostGuessableMatchSequence(password string, matches []*match.Match, excludeAdditive bool) (result Result) {
 	n := len(password)
 	validIndexes := make([]bool, n)
