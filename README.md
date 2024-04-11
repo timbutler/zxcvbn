@@ -11,5 +11,10 @@ This port aims to be fully compatible (i.e. give the same results for a given pa
 ------------------------------------------------------------------------
 
 Current status:
+
 - this library should be 100% compatible (score, sequence and number of guesses) with [release 4.4.2](https://github.com/dropbox/zxcvbn/releases/tag/v4.4.2) of the coffeescript library.
 - feedback messages are missing
+
+## Modifications
+
+- Dates now correctly detect the year when it's a YYYY pattern

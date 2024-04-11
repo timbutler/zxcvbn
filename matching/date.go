@@ -73,6 +73,11 @@ type dateMatch struct{}
 func (dm dateMatch) Matches(password string) []*match.Match {
 	matches := []*match.Match{}
 
+	// dates where it's simply the year as a four digit representation (eg 1991)
+	//if m, err := maybeDateNoSeparator.MatchString(password); !m || err != nil {
+	//	yy, _ := strconv.Atoi(password)
+	//}
+
 	// dates without separators are between length 4 '1191' and 8 '11111991'
 	for i := 0; i <= len(password)-4; i++ {
 		for j := i + 3; j <= i+7; j++ {
@@ -84,6 +89,15 @@ func (dm dateMatch) Matches(password string) []*match.Match {
 				continue
 			}
 			var candidates []*dateMatchCandidate
+
+			// Check if it's a valid year (YYYY)
+			yyyy, _ := strconv.Atoi(token)
+			if yyyy >= dateMinYear && yyyy <= dateMaxYear {
+				candidates = append(candidates, &dateMatchCandidate{
+					Year: yyyy,
+				})
+			}
+
 			for _, s := range dateSplits[len(token)] {
 				s1, s2, s3 := token[0:s.k], token[s.k:s.l], token[s.l:]
 				if dmy := mapIntsToDMY(s1, s2, s3); dmy != nil {
