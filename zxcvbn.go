@@ -1,11 +1,12 @@
 package zxcvbn
 
 import (
-	"github.com/trustelem/zxcvbn/match"
 	"time"
 	"unicode/utf8"
 
-	"github.com/trustelem/zxcvbn/matching"
+	"github.com/trustelem/zxcvbn/match"
+
+	"github.com/timbutler/zxcvbn/matching"
 	"github.com/trustelem/zxcvbn/scoring"
 )
 
