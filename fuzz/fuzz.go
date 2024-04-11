@@ -1,8 +1,9 @@
 package fuzz
 
 import (
-	"github.com/trustelem/zxcvbn"
 	"unicode/utf8"
+
+	"github.com/timbutler/zxcvbn"
 )
 
 func Fuzz(data []byte) int {

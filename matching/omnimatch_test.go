@@ -2,10 +2,11 @@ package matching
 
 import (
 	"encoding/json"
-	"github.com/stretchr/testify/assert"
-	"github.com/trustelem/zxcvbn/match"
 	"os"
 	"testing"
+
+	"github.com/stretchr/testify/assert"
+	"github.com/timbutler/zxcvbn/match"
 )
 
 func TestOmnimatch(t *testing.T) {

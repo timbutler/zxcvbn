@@ -4,7 +4,7 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/assert"
-	"github.com/trustelem/zxcvbn/match"
+	"github.com/timbutler/zxcvbn/match"
 )
 
 func Test_reverseDictionnaryMatch(t *testing.T) {

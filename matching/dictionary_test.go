@@ -1,10 +1,11 @@
 package matching
 
 import (
-	"github.com/stretchr/testify/assert"
 	"testing"
 
-	"github.com/trustelem/zxcvbn/match"
+	"github.com/stretchr/testify/assert"
+
+	"github.com/timbutler/zxcvbn/match"
 )
 
 func Test_dictionaryMatch(t *testing.T) {

@@ -3,7 +3,7 @@ package matching
 import (
 	"regexp"
 
-	"github.com/trustelem/zxcvbn/match"
+	"github.com/timbutler/zxcvbn/match"
 )
 
 type sequenceMatch struct{}

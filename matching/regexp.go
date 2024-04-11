@@ -1,8 +1,9 @@
 package matching
 
 import (
-	"github.com/trustelem/zxcvbn/match"
 	"regexp"
+
+	"github.com/timbutler/zxcvbn/match"
 )
 
 type regexpMatch struct {

@@ -2,10 +2,11 @@ package matching
 
 import (
 	"bytes"
-	// "github.com/trustelem/zxcvbn/entropy"
-	"github.com/trustelem/zxcvbn/match"
+	// "github.com/timbutler/zxcvbn/entropy"
 	"sort"
 	"strings"
+
+	"github.com/timbutler/zxcvbn/match"
 )
 
 type l33tMatch struct {

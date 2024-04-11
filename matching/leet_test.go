@@ -1,13 +1,14 @@
 package matching
 
 import (
-	"github.com/google/go-cmp/cmp"
 	"reflect"
 	"strconv"
 	"testing"
 
+	"github.com/google/go-cmp/cmp"
+
 	"github.com/stretchr/testify/assert"
-	"github.com/trustelem/zxcvbn/match"
+	"github.com/timbutler/zxcvbn/match"
 )
 
 var testl33tTable = map[string][]string{

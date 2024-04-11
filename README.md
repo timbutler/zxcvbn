@@ -1,5 +1,5 @@
 
-[![GoDoc](https://godoc.org/github.com/trustelem/zxcvbn?status.svg)](https://godoc.org/github.com/trustelem/zxcvbn)
+[![GoDoc](https://godoc.org/github.com/timbutler/zxcvbn?status.svg)](https://godoc.org/github.com/timbutler/zxcvbn)
 [![Build
 Status](https://travis-ci.org/trustelem/zxcvbn.svg?branch=master)](https://travis-ci.org/trustelem/zxcvbn)
 [![Coverage Status](https://coveralls.io/repos/github/trustelem/zxcvbn/badge.svg?branch=master)](https://coveralls.io/github/trustelem/zxcvbn?branch=master)

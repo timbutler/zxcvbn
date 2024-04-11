@@ -8,8 +8,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/trustelem/zxcvbn/match"
-	"github.com/trustelem/zxcvbn/scoring"
+	"github.com/timbutler/zxcvbn/match"
+	"github.com/timbutler/zxcvbn/scoring"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"

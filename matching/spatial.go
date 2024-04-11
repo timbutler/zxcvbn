@@ -3,8 +3,8 @@ package matching
 import (
 	"strings"
 
-	"github.com/trustelem/zxcvbn/adjacency"
-	"github.com/trustelem/zxcvbn/match"
+	"github.com/timbutler/zxcvbn/adjacency"
+	"github.com/timbutler/zxcvbn/match"
 )
 
 type spatialMatch struct {
