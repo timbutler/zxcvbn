@@ -156,6 +156,40 @@ func Test_dateMatch(t *testing.T) {
 
 	}
 
+	// matches year only dates - 2024
+	password = "test2024"
+	assert.Equal(t, []*match.Match{
+		{
+			Pattern:   "date",
+			Token:     "2024",
+			I:         4,
+			J:         7,
+			Separator: "",
+			Year:      2024,
+			Month:     0,
+			Day:       0,
+		},
+	},
+		dateMatch{}.Matches(password),
+	)
+
+	// matches year only dates - 2019
+	password = "test2019!!"
+	assert.Equal(t, []*match.Match{
+		{
+			Pattern:   "date",
+			Token:     "2019",
+			I:         4,
+			J:         7,
+			Separator: "",
+			Year:      2019,
+			Month:     0,
+			Day:       0,
+		},
+	},
+		dateMatch{}.Matches(password),
+	)
+
 	// matches overlapping dates
 	password = "12/20/1991.12.20"
 	assert.Equal(t, []*match.Match{
