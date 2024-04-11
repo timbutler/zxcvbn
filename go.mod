@@ -1,4 +1,4 @@
-module github.com/trustelem/zxcvbn
+module github.com/timbutler/zxcvbn
 
 go 1.20
 
