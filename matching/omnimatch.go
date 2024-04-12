@@ -38,7 +38,7 @@ var (
 	}{
 		{
 			Name:   "recent_year",
-			Regexp: regexp.MustCompile(`19\d\d|200\d|201\d`),
+			Regexp: regexp.MustCompile(`19\d\d|200\d|201\d|202\d`),
 		},
 	}
 	l33tTable = map[string][]string{
